@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan MikroTik</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Laporan MikroTik</h1>
+
+        <div class="section">
+            <h2>a. Pengertian MikroTik</h2>
+            <h3>Pengertian MikroTik</h3>
+            <p>MikroTik adalah perangkat lunak yang memungkinkan komputer berfungsi sebagai router jaringan. Ini mencakup berbagai fitur seperti firewall, hotspot gateway, dan pengelolaan bandwidth.</p>
+
+            <h3>Jenis-Jenis MikroTik</h3>
+            <ul>
+                <li><strong>MikroTik RouterBOARD:</strong> Perangkat keras yang sudah dilengkapi dengan sistem operasi MikroTik.</li>
+                <li><strong>MikroTik RouterOS:</strong> Sistem operasi yang dapat diinstal pada komputer untuk mengubahnya menjadi router.</li>
+                <li><strong>MikroTik CHR (Cloud Hosted Router):</strong> Versi virtual dari RouterOS yang dapat dijalankan di lingkungan virtual.</li>
+            </ul>
+
+            <h3>Fungsi MikroTik</h3>
+            <ul>
+                <li><strong>Sebagai Internet Gateway:</strong> Mengelola lalu lintas internet masuk dan keluar.</li>
+                <li><strong>Otentikasi Jaringan:</strong> Mengatur akses pengguna ke jaringan.</li>
+                <li><strong>Access Point WiFi:</strong> Menyediakan koneksi WiFi.</li>
+                <li><strong>Mengatur Firewall:</strong> Melindungi jaringan dari ancaman eksternal.</li>
+            </ul>
+
+            <h3>Kelebihan MikroTik</h3>
+            <ul>
+                <li>Harga Terjangkau: MikroTik menawarkan solusi yang lebih murah dibandingkan dengan router komersial lainnya.</li>
+                <li>Update Sistem Operasi Gratis: Pengguna dapat mengunduh pembaruan sistem operasi tanpa biaya tambahan.</li>
+                <li>Beragam Fitur: Menyediakan berbagai fitur yang berguna untuk manajemen jaringan.</li>
+                <li>Dokumentasi Lengkap: Tersedia dokumentasi yang membantu pengguna dalam konfigurasi dan pemecahan masalah.</li>
+            </ul>
+
+            <h3>Kekurangan MikroTik</h3>
+            <ul>
+                <li>Kurangnya Skalabilitas: Tidak cocok untuk jaringan yang sangat besar.</li>
+                <li>Bantuan Customer Support Lama: Waktu respons dukungan pelanggan bisa lebih lama dibandingkan dengan penyedia lain.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>b. Beberapa Tipe Lab MikroTik</h2>
+            <p>Berikut adalah beberapa tipe lab MikroTik yang umum digunakan:</p>
+
+            <h3>1. Lab Dasar MikroTik</h3>
+            <ul>
+                <li><strong>Tujuan:</strong> Memahami dasar-dasar konfigurasi MikroTik seperti pengaturan IP, NAT, dan firewall.</li>
+                <li><strong>Peralatan:</strong> Router MikroTik, komputer/laptop, kabel Ethernet.</li>
+                <li><strong>Konfigurasi:</strong> Pengaturan IP address, gateway, DNS, dan NAT dasar.</li>
+            </ul>
+
+            <h3>2. Lab Jaringan Wireless</h3>
+            <ul>
+                <li><strong>Tujuan:</strong> Mengkonfigurasi dan mengelola jaringan wireless menggunakan perangkat MikroTik.</li>
+                <li><strong>Peralatan:</strong> Router MikroTik dengan fitur wireless, perangkat wireless client (laptop, smartphone).</li>
+                <li><strong>Konfigurasi:</strong> Pengaturan SSID, keamanan jaringan (WPA/WPA2), dan manajemen bandwidth.</li>
+            </ul>
+
+            <h3>3. Lab Hotspot</h3>
+            <ul>
+                <li><strong>Tujuan:</strong> Membuat dan mengelola jaringan hotspot untuk akses internet publik.</li>
+                <li><strong>Peralatan:</strong> Router MikroTik, perangkat client, voucher atau sistem otentikasi.</li>
+                <li><strong>Konfigurasi:</strong> Pengaturan hotspot, halaman login, dan otentikasi pengguna.</li>
+            </ul>
+
+            <h3>4. Lab VPN (Virtual Private Network)</h3>
+            <ul>
+                <li><strong>Tujuan:</strong> Mengkonfigurasi VPN untuk koneksi aman antara jaringan yang berbeda.</li>
+                <li><strong>Peralatan:</strong> Dua atau lebih router MikroTik, koneksi internet.</li>
+                <li><strong>Konfigurasi:</strong> Pengaturan PPTP, L2TP, atau OpenVPN.</li>
+            </ul>
+
+            <h3>5. Lab Load Balancing</h3>
+            <ul>
+                <li><strong>Tujuan:</strong> Mengkonfigurasi load balancing untuk distribusi beban jaringan yang lebih efisien.</li>
+                <li><strong>Peralatan:</strong> Router MikroTik, beberapa koneksi internet.</li>
+                <li><strong>Konfigurasi:</strong> Pengaturan PCC (Per Connection Classifier) atau ECMP (Equal Cost Multi-Path).</li>
+            </ul>
+
+            <h3>6. Lab Bonding</h3>
+            <ul>
+                <li><strong>Tujuan:</strong> Menggabungkan beberapa koneksi jaringan untuk meningkatkan throughput.</li>
+                <li><strong>Peralatan:</strong> Router MikroTik dengan beberapa interface jaringan.</li>
+                <li><strong>Konfigurasi:</strong> Pengaturan bonding interface untuk menggabungkan beberapa link.</li>
+            </ul>
+
+            <h3>7. Lab Containerlab</h3>
+            <ul>
+                <li><strong>Tujuan:</strong> Menggunakan Containerlab untuk membuat lab virtual MikroTik yang dapat diatur dan diulang dengan mudah.</li>
+                <li><strong>Peralatan:</strong> Komputer dengan Docker dan Containerlab.</li>
+                <li><strong>Konfigurasi:</strong> Menggunakan file YAML untuk mendefinisikan topologi jaringan dan versi RouterOS.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>c. Apa itu konfigurasi?</h2>
+            <p>Konfigurasi dalam sistem jaringan melibatkan berbagai pengaturan dan penyesuaian untuk memastikan komunikasi data yang efisien dan aman antar perangkat. Berikut adalah beberapa konfigurasi utama dalam sistem jaringan:</p>
+
+            <h3>1. Pengaturan IP Address</h3>
+            <ul>
+                <li><strong>Alamat IP Statis:</strong> Alamat IP yang ditetapkan secara manual dan tidak berubah kecuali diubah secara manual.</li>
+                <li><strong>Alamat IP Dinamis:</strong> Alamat IP yang diberikan oleh server DHCP dan dapat berubah setiap kali perangkat terhubung ke jaringan.</li>
+            </ul>
+
+            <h3>2. Subnetting</h3>
+            <ul>
+                <li>Membagi jaringan besar menjadi sub-jaringan yang lebih kecil untuk meningkatkan efisiensi dan keamanan.</li>
+            </ul>
+
+            <h3>3. Konfigurasi Router</h3>
+            <ul>
+                <li><strong>Routing Static:</strong> Pengaturan rute secara manual.</li>
+                <li><strong>Routing Dinamis:</strong> Menggunakan protokol routing seperti OSPF atau BGP untuk menentukan rute secara otomatis.</li>
+            </ul>
+
+            <h3>4. Konfigurasi Switch</h3>
+            <ul>
+                <li><strong>VLAN (Virtual LAN):</strong> Membagi jaringan fisik menjadi beberapa jaringan virtual untuk segmentasi dan keamanan.</li>
+                <li><strong>Spanning Tree Protocol (STP):</strong> Mencegah loop dalam jaringan.</li>
+            </ul>
+
+            <h3>5. Firewall dan Keamanan</h3>
+            <ul>
+                <li><strong>Filter Rules:</strong> Mengatur aturan untuk mengizinkan atau menolak lalu lintas jaringan.</li>
+                <li><strong>NAT (Network Address Translation):</strong> Mengizinkan perangkat di jaringan lokal untuk mengakses internet menggunakan satu alamat IP publik.</li>
+            </ul>
+
+            <h3>6. Konfigurasi Wireless</h3>
+            <ul>
+                <li><strong>SSID dan Keamanan:</strong> Mengatur nama jaringan WiFi dan metode enkripsi (WPA2, WPA3).</li>
+                <li><strong>Channel Management:</strong> Memilih saluran yang optimal untuk mengurangi interferensi.</li>
+            </ul>
+
+            <h3>7. VPN (Virtual Private Network)</h3>
+            <ul>
+                <li>Mengkonfigurasi VPN untuk koneksi aman antara jaringan yang berbeda.</li>
+            </ul>
+
+            <h3>8. QoS (Quality of Service)</h3>
+            <ul>
+                <li>Mengatur prioritas lalu lintas jaringan untuk memastikan aplikasi penting mendapatkan bandwidth yang cukup.</li>
+            </ul>
+
+            <h3>9. DHCP (Dynamic Host Configuration Protocol)</h3>
+            <ul>
+                <li>Mengatur server DHCP untuk memberikan alamat IP secara otomatis kepada perangkat di jaringan.</li>
+            </ul>
+
+            <h3>10. DNS (Domain Name System)</h3>
+            <ul>
+                <li>Mengkonfigurasi server DNS untuk menerjemahkan nama domain menjadi alamat IP.</li>
+            </ul>
+
+            <h3>11. Monitoring dan Manajemen Jaringan</h3>
+            <ul>
+                <li>Menggunakan alat monitoring seperti SNMP (Simple Network Management Protocol) untuk memantau kinerja jaringan dan mendeteksi masalah.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>d. Apa itu Winbox?</h2>
+            <h3>Pengertian Winbox</h3>
+            <p>Winbox adalah utilitas kecil berbasis GUI (Graphical User Interface) yang memungkinkan Anda untuk mengkonfigurasi MikroTik RouterOS dengan cepat dan mudah. Aplikasi ini dapat berjalan di berbagai sistem operasi seperti Windows, Linux (menggunakan Wine), dan MacOS.</p>
+
+            <h3>Fungsi Winbox</h3>
+            <ul>
+                <li>Konfigurasi Router: Memungkinkan pengaturan berbagai fitur router seperti IP address, firewall, NAT, dan lainnya.</li>
+                <li>Monitoring Jaringan: Memantau lalu lintas jaringan secara real-time.</li>
+                <li>Manajemen Bandwidth: Mengatur dan membatasi kecepatan jaringan.</li>
+                <li>Blokir Situs: Mengelola akses ke situs web tertentu.</li>
+                <li>Remote Access: Mengelola router dari jarak jauh.</li>
+            </ul>
+
+            <h3>Fitur Winbox</h3>
+            <ul>
+                <li><strong>Neighbors:</strong> Menemukan perangkat MikroTik yang terhubung ke jaringan menggunakan MikroTik Neighbor Discovery Protocol (MNDP) atau Cisco Discovery Protocol (CDP).</li>
+                <li><strong>Managed:</strong> Melihat dan mengelola entri yang disimpan.</li>
+                <li><strong>Tools:</strong> Berbagai alat untuk mengimpor dan mengekspor konfigurasi, memeriksa pembaruan, dan lainnya.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
