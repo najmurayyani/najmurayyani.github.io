@@ -1,40 +1,46 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laporan MikroTik</title>
-    <style>
-        body {
-            font-family: Poppins, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-        }
-        h1, h2, h3 {
-            color: #333;
-        }
-        ul {
-            margin: 0;
-            padding-left: 20px;
-        }
-        ul li {
-            margin-bottom: 10px;
-        }
-        .section {
-            margin-bottom: 30px;
-        }
-    </style>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Laporan 2</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="content">
-        <h1>Laporan Penggunaan Dasar Mikrotik</h1>
-        <p>pengenalan</p>
-        <ul>
-            <li>
-                kafjajkgahjhadjakj
-            </li>
-        </ul>
-        </div>
-    </div>
+    <header>
+        <h1>Laporan Konfigurasi MikroTik dengan WinBox</h1>
+    </header>
+
+    <main>
+        <section id="window">
+            <h2>A. Apa itu WinBox?</h2>
+            <p>WinBox adalah sebuah utilitas kecil yang memungkinkan administrasi MikroTik RouterOS menggunakan antarmuka grafis yang cepat dan sederhana. WinBox adalah aplikasi native untuk Windows (Win32/Win64), tetapi juga dapat dijalankan di Linux dan macOS menggunakan Wine. Dengan WinBox, kamu bisa mengelola berbagai fungsi router seperti routing, firewall, manajemen bandwidth, titik akses nirkabel, gateway hotspot, server VPN, dan banyak lagi. Semua fungsi antarmuka WinBox dirancang sedekat mungkin dengan fungsi konsol, sehingga memudahkan pengguna yang terbiasa dengan perintah konsol.</p>
+        </section>
+
+        <section id="topologi">
+            <h2>B. Topologi Jaringan</h2>
+            <p>MikroTik adalah perangkat keras dan perangkat lunak yang digunakan untuk mengelola dan mengkonfigurasi jaringan. Salah satu fitur yang sering digunakan dalam konfigurasi MikroTik adalah <strong>bridge</strong>, yang memungkinkan penggabungan dua atau lebih antarmuka jaringan menjadi satu jaringan logis. Fitur ini berguna dalam berbagai situasi, seperti membangun jaringan lokal (LAN), jaringan nirkabel (Wi-Fi), atau mengimplementasikan fitur seperti VLAN.</p>
+            <p>Ada dua mode konfigurasi utama pada MikroTik: mode router dan mode bridge (switch).</p>
+            <ul>
+                <li><strong>Mode Router:</strong> Mode router adalah mode operasi standar dari MikroTik RouterOS. Dalam mode ini, perangkat MikroTik berfungsi sebagai router yang mengarahkan lalu lintas data antar jaringan yang berbeda.</li>
+                <li><strong>Mode Bridge (Switch):</strong> Mode ini mengubah perangkat MikroTik menjadi switch yang menghubungkan beberapa perangkat dalam jaringan lokal (LAN) dan memungkinkan komunikasi antar perangkat tersebut di tingkat lokal.</li>
+            </ul>
+        </section>
+
+        <section id="prosedur-router">
+            <h2>C. Prosedur Mode Router</h2>
+            <p>Berikut adalah langkah-langkah dasar untuk mengkonfigurasi router MikroTik RB931-2nD dengan IP <strong>192.168.1.40/24</strong>:</p>
+            <ol>
+                <li><strong>Hubungkan Router ke PC:</strong> Sambungkan router MikroTik ke PC menggunakan kabel Ethernet. Gunakan salah satu port dari 2 hingga 5.</li>
+                <li><strong>Unduh dan Buka WinBox:</strong> Unduh WinBox dari situs resmi MikroTik, buka WinBox, dan temukan alamat MAC router di tab “Neighbors”.</li>
+                <li><strong>Hapus Konfigurasi Default:</strong> Setelah login, klik “Remove Configuration” untuk memulai dari awal.</li>
+                <li><strong>Setel IP Address untuk LAN:</strong> Buka menu IP > Addresses dan tambahkan alamat IP <strong>192.168.1.40/24</strong>.</li>
+                <li><strong>Konfigurasi DHCP Server:</strong> Buka menu IP > DHCP Server, tambahkan jaringan baru, dan atur gateway ke <strong>192.168.1.40</strong>.</li>
+                <li><strong>Setel NAT untuk Koneksi Internet:</strong> Buka menu IP > Firewall dan tambahkan aturan NAT baru dengan menggunakan “masquerade”.</li>
+                <li><strong>Simpan dan Reboot:</strong> Setelah semua konfigurasi selesai, simpan perubahan dan reboot router.</li>
+            </ol>
+        </section>
+    </main>
 </body>
 </html>
